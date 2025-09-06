@@ -6,17 +6,15 @@ Este proyecto está diseñado para realizar un proceso ETL (Extract, Transform, 
 
 ### Tabla de Contenidos
 
-- Introducción
-- Tecnologías Utilizadas
-- Descripción del Proyecto
-- Estructura de Archivos
-- Instalación
-- Ejecutar el Proyecto
-- Consultas SQL
-- Contrib
-- Licencia
+- [Introducción](#introducción)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Estructura de Archivos](#estructura-de-archivos)
+- [Instalación](#instalación)
+- [Ejecutar el Proyecto](#ejecutar-el-proyecto)
+- [Consultas SQL](#consultas-sql)
 
-#### Introducción
+## Introducción
 
 Este proyecto tiene como objetivo cargar datos relacionados con órdenes, pagos y reseñas de un dataset de Olist en una base de datos MySQL, utilizando un proceso ETL en Python.
 
@@ -28,7 +26,7 @@ El flujo ETL realizado incluye los siguientes pasos:
 
 **3. Carga**: Los datos transformados son cargados en las tablas correspondientes de la base de datos MySQL.
 
-#### Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Python**: Lenguaje de programación utilizado para desarrollar el proceso ETL.
 - **Pandas**: Librería para la manipulación y análisis de datos.
@@ -37,7 +35,7 @@ El flujo ETL realizado incluye los siguientes pasos:
 - **dotenv**: Para la gestión de variables de entorno.
 - **PyMySQL**: Conector para interactuar con MySQL desde Python.
 
-#### Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto se basa en tres datasets proporcionados por Olist:
 
@@ -49,7 +47,7 @@ Este proyecto se basa en tres datasets proporcionados por Olist:
 
 Los datos extraídos de estos archivos CSV son transformados y cargados en una base de datos MySQL para su posterior análisis.
 
-#### Estructura de Archivos
+## Estructura de Archivos
 
 ```bash
 /olist-ecommerce-etl
@@ -61,7 +59,7 @@ Los datos extraídos de estos archivos CSV son transformados y cargados en una b
 └── README.md # Este archivo
 ```
 
-#### Instalación
+## Instalación
 
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
@@ -107,7 +105,7 @@ DB_PORT=3306
 DB_NAME=olist_db
 ```
 
-### Ejecutar el Proyecto
+## Ejecutar el Proyecto
 
 Una vez que hayas configurado el archivo `.env` y las dependencias, puedes ejecutar el script ETL con el siguiente comando:
 
@@ -117,7 +115,7 @@ python etl_olist.py
 
 Este comando leerá los archivos CSV, transformará los datos y los cargará en la base de datos MySQL especificada.
 
-#### Consultas SQL
+## Consultas SQL
 
 A continuación se presentan algunas consultas SQL que pueden ser útiles para analizar los datos en la base de datos:
 
