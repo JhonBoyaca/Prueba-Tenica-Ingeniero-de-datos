@@ -157,15 +157,7 @@ ORDER BY payment_count DESC
 LIMIT 3;
 ```
 
-**5.** Número de comentarios con mensajes vacíos:
-
-```sql
-SELECT COUNT(\*) AS empty_reviews_count
-FROM olist_order_reviews_dataset
-WHERE review_comment_message IS NULL;
-```
-
-**6.** Promedio de las puntuaciones de las reseñas:
+**5.** Promedio de las puntuaciones de las reseñas:
 
 ```sql
 SELECT AVG(review_score) AS average_review_score
